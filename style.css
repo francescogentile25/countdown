@@ -1,0 +1,116 @@
+/*
+    Colori:
+    color blue: #3535EC;
+    color blue dark: #120945;
+    color gray: #D4D7F5;
+    color-green: #306753;
+    color pink: #DE7EB6;
+    color yellow: #F2AD41;
+    color white: #ffffff;
+*/
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 6px;
+}
+
+html {
+    background-image: url(pinguini-3.jpeg);
+    font-family: 'Livvic', sans-serif;
+    line-height: 1;
+}
+
+.container {
+    width: 350px;
+    margin: 32px auto 0 auto;
+}
+
+.xmas-stage {
+    position: relative;
+    height: 600px;
+}
+
+.panel {
+    background-color: #120945;
+    padding: 16px 24px;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #DE7EB6;
+    margin-bottom: 24px;
+    font-size: 30px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-block {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+.counter-block:last-child {
+    color: #F2AD41;
+}
+.counter-block-number {
+    font-size: 48px;
+}
+.counter-block-label {
+    font-size: 20px;
+}
+
+
+img:hover{
+    animation-name: bump;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.gift:hover {
+    animation-name: jingle;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ball:hover {
+    animation-name: bump;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* Animation */
+@keyframes jingle {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes bump {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
